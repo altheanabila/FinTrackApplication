@@ -1,3 +1,5 @@
+package org.example;
+
 import org.example.model.Expense;
 import org.example.repository.ExpenseRepository;
 import org.springframework.boot.CommandLineRunner;
@@ -13,9 +15,8 @@ public class DataLoader implements CommandLineRunner {
 
   @Override
   public void run(String... args) {
-    expenseRepository.save(new Expense("Groceries", 120));
-    expenseRepository.save(new Expense("Rent", 850));
-    expenseRepository.save(new Expense("Internet", 60));
+    expenseRepository.save(new Expense("Coffee", 5.0));
+    expenseRepository.save(new Expense("Groceries", 40.0));
   }
 
 
