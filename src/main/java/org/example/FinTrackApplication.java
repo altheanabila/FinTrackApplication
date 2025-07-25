@@ -9,6 +9,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableJpaRepositories("org.example.repository")
 @EntityScan("org.example.model")
 
+
 public class FinTrackApplication {
   public static void main(String[] args) {
     SpringApplication.run(FinTrackApplication.class, args);
