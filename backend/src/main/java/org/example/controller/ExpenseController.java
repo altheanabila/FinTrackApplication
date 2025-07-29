@@ -1,6 +1,6 @@
 package org.example.controller;
 
-import org.example.model.Expense;
+import org.example.entity.Expense;
 import org.example.repository.ExpenseRepository;
 import org.springframework.web.bind.annotation.*;
 

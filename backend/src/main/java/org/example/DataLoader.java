@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.model.Expense;
+import org.example.entity.Expense;
 import org.example.repository.ExpenseRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

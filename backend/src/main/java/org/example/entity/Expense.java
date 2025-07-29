@@ -1,17 +1,20 @@
-package org.example.model;
+package org.example.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 
 @Entity
 @Getter
 @Setter
-
+@AllArgsConstructor
+@NoArgsConstructor
 public class Expense {
 
   @Id
@@ -21,34 +24,9 @@ public class Expense {
   private String description;
   private double amount;
 
-  public Expense() {}
-
   public Expense(String description, double amount) {
     this.description = description;
     this.amount = amount;
   }
 
-  public Long getId() {
-    return id;
-  }
-
-  public String getDescription() {
-    return description;
-  }
-
-  public double getAmount() {
-    return amount;
-  }
-
-  public void setId(Long id) {
-    this.id = id;
-  }
-
-  public void setDescription(String description) {
-    this.description = description;
-  }
-
-  public void setAmount(double amount) {
-    this.amount = amount;
-  }
 }
